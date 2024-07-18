@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML para teste de DOM</title>
+    <link rel="stylesheet" href="./teste.css">
+</head>
+<body>
+    <h1>Exemplo mouseover com getElementsByClassName</h1>
+    
+    <div>
+        <p class="minha-classe">Este é o primeiro parágrafo.</p>
+        <p class="minha-classe">Este é o segundo parágrafo.</p>
+        <p>Este é o terceiro parágrafo sem a classe.</p>
+    </div>
+
+    <hr>
+
+    <h1>Exemplo de innerText com getElementsByTagName</h1>
+
+    <span>Esse é um texto de teste que deve mudar</span>
+
+    <hr>
+
+    <h1>Exemplo de innerText com querySelectorAll</h1>
+
+    <div class="note">Este é uma nota.</div>
+    <div class="alert">Este é um alerta!</div>
+    <div class="note">Outra nota aqui.</div>
+    <div class="alert">Mais um alerta!</div>
+
+    <hr>
+
+    <h1>Exemplo de innerText com getAttribute</h1>
+
+    <a id="meuLink" href="https://www.exemplo.com" target="_blank">Visite o Exemplo</a>
+    <p id="resultado"></p>
+
+    <hr>
+
+    <h1>Exemplo de setAttribute</h1>
+
+    <button>Hello World</button>
+
+    <hr>
+
+    <h1>Exemplo de innerHTML</h1>
+
+    <div id="minhaDiv">Texto original aqui.</div>
+    <button id="meuBotao">Alterar Texto</button>
+
+    <hr>
+
+    <h1>Exemplo de classList</h1>
+
+    <div id="myDIV">Texto no meu DIV</div>
+    <button id="addButton">Adicionar Estilo</button>
+    <button id="removeButton">Remover Estilo</button>
+    <button id="toggleButton">Alternar Estilo</button>
+
+    <hr>
+
+    <h1>MODIFICANDO O ATRIBUTO DA TAG</h1>
+
+    <p id="meuParagrafo" class="original">Este é um parágrafo.</p>
+    <button id="mudarClasse">Mudar Classe</button>
+
+    <hr>
+
+    <h1>MODIFICANDO O ESTILO DA TAG</h1>
+
+    <p id="paragrafo1">Este é o primeiro parágrafo.</p>
+    <p id="paragrafo2">Este é o segundo parágrafo.</p>
+    <button id="botao">Mudar Cor do Parágrafo 2</button>
+    
+    <script src="./manipulacaoDeDom.js"></script>
+</body>
+</html>
