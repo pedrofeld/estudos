@@ -85,6 +85,27 @@ matches.forEach(function(element) {
 });
 
 /*
+query Selector => consulta por seletores
+
+CONSULTA POR TAG HTML:
+const texto = document.querySelector('p')
+- utiliza apenas aspas
+
+CONSULTA POR CLASS NAME:
+const texto = document.querySelector('.meu-paragrafo')
+- utiliza aspas e ponto, assim como para acessar a classe no CSS
+
+CONSULTA POR ID:
+const texto = document.querySelector('#texto-dinamico')
+- utiliza #, assim como para acessar o ID no CSS
+
+CONSULTA POR VARIOS SELETORES CONCATENADOS
+const texto = document.querySelector('p.verde')
+const button = document.querySelector('button#my-btn')
+- utiliza a classe e o caracter do atributo para puxá-lo
+*/
+
+/*
 getAttribute
 
 - retorna o valor de um atributo específico
@@ -111,7 +132,7 @@ setAttribute
 // seleciona o botão
 var b = document.querySelector("button");
 
-// desabilita o botão
+// desabilita o botão (name, value)
 b.setAttribute("disabled", "disabled");
 
 /*
@@ -191,7 +212,7 @@ document.getElementById("removeButton").onclick = function() {
     list.remove("myStyle");
 };
 
-// altera o estilo (entre a opção 1 e 2)
+// altera o estilo (entre a opção 1 e 2) -  muito usado para mudar o tema da página (light theme and dark theme)
 document.getElementById("toggleButton").onclick = function() {
     list.toggle("myStyle");
 };
@@ -213,3 +234,47 @@ pathname: caminho, especifica a rota do site, indica uma página ou um recurso e
 search: o "?" é usado para enviar parâmetros para a página, usado para filtrar o conteúdo)
 hash: é o fragmento, usado para identificar uma sessão da página)
 */
+ 
+/*
+CREATE
+- serve para criar elementos HTML
+*/
+
+const imagem = document.createElement('img')
+imagem.src = 'imagemTeste.jpg'
+imagem.alt = 'Arquitetura DOM'
+imagem.style.width = 'auto'
+imagem.height = 250
+
+console.log(imagem);
+
+/*
+APPEND CHILD
+- serve para adicionar um elemento no HTML
+*/
+
+const divImagem = document.getElementById("aquiVaiImagem")
+divImagem.appendChild(imagem)
+
+console.log(divImagem)
+
+/*
+REMOVE CHILD
+- serve para remover um elemento no HTML
+- primeiro precisamos chegar aonde está o elemento para depois excluir ele
+*/
+
+// o evento garante que todos os elementos HTML estejam completamente carregados para a manipulação
+document.addEventListener('DOMContentLoaded', function() {
+    // seleciona o elemento body, porque é onde o botão está
+    const body = document.querySelector('body');
+    
+    // seleciona o botão, que é o elemento que queremos excluir
+    const myBtn = document.querySelector('#my-btn');
+    
+    // remove o botão do DOM
+    body.removeChild(myBtn);
+    
+    // verifica se o botão foi removido
+    console.log(myBtn);
+});

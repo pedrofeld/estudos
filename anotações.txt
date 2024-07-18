@@ -1,0 +1,36 @@
+Node.js
+É um interpretador JavaScript que não depende do navegador. Composto pelo V8 e pela libuv:
+V8: motor js do chrome, é a parte que entende o node
+libuv: biblioteca que se conecta a um banco de dados
+Vantagens do node:
+- é leve, pouco uso de memória ram, aproveita melhor a cpu, é rápido, alto desempenho, suporta um grande número de 
+requisições
+- linguagem simples e muito rico em bibliotecas, modulos e plug-ins
+
+Express
+Framework para node.js que facilita a criação de aplicações web e APIs, ele fornece os recursos.
+
+Nodemon
+Monitora as mudanças dos projetos no node.js e reinicia o servidor automaticamente quando detecta alterações.
+
+Sucrase
+Faz o intermédio entre as versões do js, faz com que as versões novas se conversem com as velhas e torna o código 
+compatívelem navegadores antigos.
+
+CORS
+Política de segurança que permite que os recursos de um servidor sejam acessados por páginas web de outros domínios 
+e configura as permissões de acesso das APIs.
+
+Bcrypt
+Serve para criptografar senhas.
+
+Axios
+Biblioteca que realiza requisições http em js, trabalha com “promessas” - funções assíncronas.
+
+Middleware
+Faz o intermédio entre o sistema operacional e as aplicações executadas sobre ele, que funcionam no esquema de
+solicitação (request) e resposta (response). Ele faz o processamento (analisa, modifica, redireciona ou rejeita as
+requisições e respostas), verifica se o usuário está autentaticado e autorizado a acessar determinados recursos,
+registra detalhes sobre as req e res, captura e processa erros, pode adicionar, remover ou modificar cabeçalhos
+HTTP, pode ser usado para eljorar a performance da aplicação, fazendo a compressão de respostas para reduzir
+a largura da banda e do cache, ainda permite a reutilização de códigos e a organização do código.
