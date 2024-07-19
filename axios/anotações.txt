@@ -24,9 +24,6 @@ e configura as permissões de acesso das APIs.
 Bcrypt
 Serve para criptografar senhas.
 
-Axios
-Biblioteca que realiza requisições http em js, trabalha com “promessas” - funções assíncronas.
-
 Middleware
 Faz o intermédio entre o sistema operacional e as aplicações executadas sobre ele, que funcionam no esquema de
 solicitação (request) e resposta (response). Ele faz o processamento (analisa, modifica, redireciona ou rejeita as
@@ -34,3 +31,33 @@ requisições e respostas), verifica se o usuário está autentaticado e autoriz
 registra detalhes sobre as req e res, captura e processa erros, pode adicionar, remover ou modificar cabeçalhos
 HTTP, pode ser usado para eljorar a performance da aplicação, fazendo a compressão de respostas para reduzir
 a largura da banda e do cache, ainda permite a reutilização de códigos e a organização do código.
+
+------------ AXIOS -------------
+
+Biblioteca que realiza requisições http em js, trabalha com “promessas” - funções assíncronas.
+
+Usar o seguinte script para instalar o axios, vai em cima do script do js.
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+As requisições de axios funcionam com os verbos do back-end (métodos http) POST, GET, PUT e DELETE.
+
+Exemplo de estância, "pressets", configurações padrões para não replicar funções. É uma variável que vai armazenar
+estâncias.
+
+const api = axios.create({
+    baseURL: 'https://reqres.in/api',
+    timeout: 1000,
+    headers: {}
+});
+
+timeout: tempo que o sistema espera a reposta antes de cancelar a requisição
+header: antecipar a função
+
+=> É recomendado fazer essa estância em um arquivo separado, apenas com ela. Essa é a ordem dos scripts:
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="api.js"></script>
+    <script src="axios.js"></script>
+
+Hacks:
+- Ao selecionar uma palavra e dar F2, vai aparecer um campo de texto para sobrescrever todas as palavras do código
+iguais a que tu selecionou pelo novo conteúdo inserido no campo de texto.

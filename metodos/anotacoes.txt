@@ -1,0 +1,35 @@
+DOM = Manipulação dos elementos do HTML
+
+Permite:
+- Alterar dados sem precisar recarregar a página
+- Criar aplicações customizáveis
+- Arrastar, mover, adicionar, editar e excluir elementos
+- Adicionar dinamismo às aplicações
+
+A hierarquia é composta por:
+1) Window
+2) Location, document e history
+3) HTML (dentro de document)
+4) Elementos (dentro do HTML)
+5) Textos e atributos (dentro e/ou entre os elementos)
+
+3 termos importantes:
+MÉTODOS - são as formas de manipular os elementos, como buscar por uma tag ou mudar o conteúdo, por exemplo
+EVENTOS - identificam ações do usuário, como ao clicar em um botão ou passar o mouse por cima de um elemento
+ELEMENTOS - todas as tags HTML
+
+JANELA DO NAVEGADOR
+
+https://www.growdev.com.br/starter?filter=JS#2
+
+https: protocolo
+www.growdev.com.br: hostname
+/starter: pathname
+?filter=JS: search
+#2: hash
+
+protocolo: indica que a conexão é segura
+hostname: é o domínio, nome do site e a parte principal do endereço da web
+pathname: caminho, especifica a rota do site, indica uma página ou um recurso específico
+search: o "?" é usado para enviar parâmetros para a página, usado para filtrar o conteúdo
+hash: é o fragmento, usado para identificar uma sessão da página
